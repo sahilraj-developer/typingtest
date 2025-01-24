@@ -7,7 +7,7 @@ import { useState } from "react";
 
 export default function TypingTest() {
   const [text, setText] = useState(generateRandomText("sentences", 3));
-  const { timeLeft, isActive, currentIndex, inputValue, stats, handleInput, resetTest } = useTypingTest(text);
+  const { timeLeft, currentIndex, inputValue, stats, handleInput, resetTest } = useTypingTest(text);
 
   const words = text.split("").map((char, index) => ({
     text: char,

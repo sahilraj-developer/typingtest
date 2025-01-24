@@ -40,7 +40,7 @@ export function useTypingTest(text: string) {
 
   // Timer effect
   useEffect(() => {
-    let interval: NodeJS.Timeout | undefined
+    let interval : any;
 
     if (timeLeft > 0) {
       interval = setInterval(() => {
