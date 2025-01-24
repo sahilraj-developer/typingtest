@@ -1,0 +1,38 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: #f8f9fa;
+}
+
+.typing-text {
+  font-family: monospace;
+  font-size: 1.25rem;
+  line-height: 1.75;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.char {
+  padding: 0 1px;
+  transition: all 0.1s ease;
+}
+
+.char.active {
+  background-color: rgba(13, 110, 253, 0.2);
+  border-radius: 2px;
+}
+
+.char.correct {
+  color: #198754;
+}
+
+.char.incorrect {
+  color: #dc3545;
+  text-decoration: underline;
+}
+
+.display-6 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
